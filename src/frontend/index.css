@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.99 0 0;
+    --foreground: 0.18 0.02 145;
+    --card: 0.99 0 0;
+    --card-foreground: 0.18 0.02 145;
+    --popover: 0.99 0 0;
+    --popover-foreground: 0.18 0.02 145;
+    --primary: 0.52 0.18 148;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.93 0.04 148;
+    --secondary-foreground: 0.32 0.12 148;
+    --muted: 0.95 0.02 148;
+    --muted-foreground: 0.52 0.06 148;
+    --accent: 0.88 0.08 148;
+    --accent-foreground: 0.28 0.14 148;
+    --destructive: 0.55 0.22 27;
+    --destructive-foreground: 0.99 0 0;
+    --border: 0.88 0.04 148;
+    --input: 0.88 0.04 148;
+    --ring: 0.52 0.18 148;
+    --radius: 0.75rem;
+    --chart-1: 0.52 0.18 148;
+    --chart-2: 0.65 0.16 148;
+    --chart-3: 0.75 0.12 148;
+    --chart-4: 0.42 0.14 148;
+    --chart-5: 0.35 0.10 148;
+    --sidebar: 0.97 0.02 148;
+    --sidebar-foreground: 0.18 0.02 145;
+    --sidebar-primary: 0.52 0.18 148;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.88 0.08 148;
+    --sidebar-accent-foreground: 0.28 0.14 148;
+    --sidebar-border: 0.88 0.04 148;
+    --sidebar-ring: 0.52 0.18 148;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+/* Remove number input spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
